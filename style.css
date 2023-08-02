@@ -1,0 +1,146 @@
+/* main */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+}
+/* stavljen overflow-x hidden da bih sprecio pojavljivanje belih praznina na veoma malim rezolucijama */
+html,body{
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #0A4D68;
+}
+
+
+/* nav */
+.navbar {
+  background-color: #222831;
+}
+.navbar .logo-nav{
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 1.5rem;
+}
+.navbar .it-logo{
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 1.5rem;
+}
+
+.navbar .it-logo:hover{
+  color: #FF9803;
+}
+.navbar .it-logo:hover .it-span{
+  color: #EEEEEE;
+}
+
+.navbar .it-logo .it-span{
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #FF9803;
+}
+
+.navbar .nav-item .nav-link{
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.navbar .nav-item:hover{
+  border-bottom: 2px solid #EEEEEE;
+  background-color: #393E46;
+  border-radius: 5px;
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+
+/* carousel */
+#carousel-slike .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.3; 
+  background-color: #393E46;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.5; 
+}
+
+/* deo citati */
+.bg-custom {
+  background-color: #393E46;
+}
+
+.row-custom {
+  margin-bottom: 2rem;
+}
+
+.row-custom p {
+  color: #EEEEEE;
+  text-align: center;
+  padding: 2rem;
+}
+
+#citati img {
+  max-height: 50vh;
+}
+
+.citati-border{
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #EEEEEE;
+}
+
+/* sekcija kartice */
+.card-custom {
+  border: 2px solid #EEEEEE;
+  border-radius: 5px;
+  background-color: #393E46;
+  margin-bottom: 15rem;
+  height: 70%;
+}
+
+.card-title{
+  border: 2px solid #EEEEEE;
+  border-radius: 5px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #222831;
+  color: #EEEEEE;
+  padding-top: 0.5rem;
+}
+
+
+@media (min-width: 768px) {   /* morao sam da ubacim media query za vece ekrane jer sam imao problema sa centriranjem logoa u nav baru */
+  .navbar .it-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #citati img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
